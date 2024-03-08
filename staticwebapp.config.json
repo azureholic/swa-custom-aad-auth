@@ -1,11 +1,12 @@
 {
-    "routes": [
-        {
-            "route": "/authenticated/*",
-            "allowedRoles": [ "authenticated" ]
-        }
-    ],
-    
+  "routes": [
+    {
+      "route": "/authenticated/*",
+      "allowedRoles": [
+        "authenticated"
+      ]
+    }
+  ],
   "auth": {
     "identityProviders": {
       "azureActiveDirectory": {
@@ -16,9 +17,8 @@
         }
       }
     }
+  },
+  "globalHeaders": {
+    "Cache-Control": "no-cache"
   }
-},
-"globalHeaders": {
-        "Cache-Control": "no-cache"
-    }
 }
